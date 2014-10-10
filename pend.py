@@ -1,7 +1,8 @@
 
-import glob
 import argparse
 import time
+
+# todo: use glob
 
 def main():
     description = 'Pend (as in "pending" or "wait") on one or more files to be written (i.e. each file must exist' \
