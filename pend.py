@@ -6,7 +6,9 @@ import time
 
 def main():
     description = 'Pend (as in "pending" or "wait") on one or more files to be written (i.e. each file must exist' \
-                  ' and can be opened for reading).'
+                  ' and can be opened for reading).  This is useful when you launch one or more applications that' \
+                  'each write out a file, and you want to wait (pend) for them to all be done so you can then run' \
+                  'another application that uses their output.'
     parser = argparse.ArgumentParser(description=description)
     parser.add_argument('files', nargs='+')
     parser.add_argument('-v', '--verbose', action='store_true', help='verbose')
